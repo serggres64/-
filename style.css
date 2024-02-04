@@ -1,0 +1,178 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300;16..144,500;16..144,700&family=Roboto+Slab:wght@300;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montagu Slab;
+}
+
+
+header{
+    background-color: rgb(4, 57, 52);
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    padding: 12px 0px;
+    font-weight: 700;
+}
+
+main{
+    padding: 25px 12px;
+    background-color: rgb(4, 57, 52);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card h2 {
+    color: white;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: rgb(232, 12, 12);
+}
+
+.card button{
+    padding: 5px 12px;
+    border-radius: 24px;
+}
+
+.card button a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.card button a img {
+    padding: 0px 5px;
+    width: 24px;
+}
+
+.logo img {
+    width: 500px;
+    max-width: 1000px;
+    min-width: 100px;   
+}
+
+.description {
+    color: white;
+    margin: 20px;
+}
+
+.description .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 12px 12px;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.description .main .text{
+    font-size: 24px;
+}
+.description .main .text p{
+    padding: 5px;
+}
+
+.animation {
+    padding: 60px;
+}
+
+footer{
+    background-color: rgb(4, 57, 52);
+    padding: 24px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo img{
+    height: 100px;
+}
+
+
+
+
+
+
+
+.loader{
+    height: 125px;
+    width: 125px;
+    animation: spin 7s ease-in-out infinite;
+}
+
+.circle{
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    background-color: black;
+    mix-blend-mode: screen;
+    border-radius: 50%;
+    opacity: 0.75;
+    animation: breath 7s ease-in-out infinite;
+}
+
+.circle:nth-child(1) {
+    transform: translate(-35px, -50px);
+    background: #1abc9c;
+}
+
+.circle:nth-child(2) {
+    transform: translate(35px, -50px);
+    background: #2ecc71;
+}
+
+.circle:nth-child(3) {
+    transform: translate(-60px, 0px);
+    background: #3498db;
+}
+
+.circle:nth-child(4) {
+    transform: translate(60px, 0px);
+    background: #9b59b6;
+}
+
+.circle:nth-child(5) {
+    transform: translate(-35px, 50px);
+    background: #f1c40f;
+}
+
+.circle:nth-child(6) {
+    transform: translate(35px, 50px);
+    background: #e67e22;
+}
+
+@keyframes spin {
+    50%{
+        filter: blur(0px);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes breath {
+    50% {
+        transform: translateY(0px);
+    }
+
+
+}
